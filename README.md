@@ -2,7 +2,7 @@
 
 # Output of R file's will be 
 
-# Country   Age      Salary  Purchased
+ Country   Age      Salary  Purchased
 
   1     	44.00000	72000.00	1
   
