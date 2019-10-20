@@ -1,1 +1,1 @@
-# Catogorical-variables-to-numbers
+# Catogorical-Variables-to-Numbers
