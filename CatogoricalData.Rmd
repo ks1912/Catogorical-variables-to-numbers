@@ -1,8 +1,10 @@
-#IMPORTING DATASET
+# NOTE -> Do change your directory and set that as your working diractory then only you can import files from that particular File.
+# IMPORTING DATASET
+-----------------------------------------------------------------------------------------------------
 dataset = read.csv('Data.csv')
 
-
-#Taking Care of missing Data form the Dataset
+-----------------------------------------------------------------------------------------------------
+# Taking Care of missing Data form the Dataset
 dataset$Age = ifelse(is.na(dataset$Age),
                      ave(dataset$Age, FUN = function(x) mean(x, na.rm = TRUE)),
                      dataset$Age)
@@ -12,7 +14,9 @@ dataset$Salary = ifelse(is.na(dataset$Salary),
                      ave(dataset$Salary, FUN = function(x) mean(x, na.rm = TRUE)),
                      dataset$Salary)
                      
-# Encoding Catogorical Data
+------------------------------------------------------------------------------------------------------                     
+Encoding Catogorical Data
+---------------------------------------------------------------------------------------------------
 # Encoding Country Data 
 dataset$Country = factor(dataset$Country,
                           levels = c('France','Spain','Germany'),
@@ -22,3 +26,5 @@ dataset$Country = factor(dataset$Country,
 dataset$Purchased = factor(dataset$Purchased,
                           levels = c('Yes','No'),
                           labels = c(0, 1))
+                          
+------------------------------------------------------------------------------------------------------
